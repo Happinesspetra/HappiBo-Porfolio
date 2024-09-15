@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="shortcut icon" href="image/favicon (1).ico" type="image/x-icon">
+</head>
+<link rel="stylesheet" href="styles.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/fontawesome.min.css">
+</head>
+
+<body>
+    <!-- Hero Section -->
+    
+    <!--      Hero Section Starts     -->
+  <!-- Your website content here -->
+  
+  <div class="hero">
+    <div class="hero-background">
+    <div class="light-container">
+        <div class="default-mode">
+            <div id="theme-switcher">
+                <svg id="theme-icon" class="theme-icon" viewBox="0 0 24 24" onclick="toggleDropdown()">
+                    <path id="icon-path"
+                        d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58c-.39-.39-1.03-.39-1.41 0-.39.39-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37c-.39-.39-1.03-.39-1.41 0-.39.39-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0 .39-.39.39-1.03 0-1.41l-1.06-1.06zm1.06-10.96c.39-.39.39-1.03 0-1.41-.39-.39-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.36c.39-.39.39-1.03 0-1.41-.39-.39-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z" />
+                </svg>
+                <div id="themeDropdown" class="dropdown">
+                    <a href="#" onclick="setTheme('default')">System</a>
+                    <a href="#" onclick="setTheme('light')">Light</a>
+                    <a href="#" onclick="setTheme('dark')">Dark</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="zoom-in">
+        <header>
+        <nav>
+            <div class="logo"><a href="index.html"><img src="image/happi3 (Phone).png"></a></div>
+            <div class="openMenu"><i class="fa fa-bars"></i></div>
+            <ul class="mainMenu">
+                <div class="header-container">
+                        <li> <a href="index.html"><div class="header-item" id="home">Home</div></a></li>
+                        <li> <a href="about.html"><div class="header-item" id="home">About</div></a></li>
+                        <li> <a href="https://eu.docworkspace.com/d/cIGftuNDiAfWsmrYG?from=dco"><div class="header-item" id="home">Resume</div></a></li>
+                        <li> <a href="contact.html"><div class="header-item" id="home">Contact</div></a></li>
+                </div>
+                <div class="closeMenu"><i class="fa fa-times"></i></div>
+            </ul>
+        </nav>
+    </header>
+</div>
+
+<div class="mainhero-content">
+    <h3>Welcome to</h3>
+    <h1 class="typing-effect"></h1>
+    <a href="#events"><button type="button">Take a Tour</button></a>
+</div> 
+    
+<div class="sound-content" id="sound-button">
+    <svg class="sound-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+        <path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9l0-176c0-8.7 4.7-16.7 12.3-20.9z"/></svg>
+
+    <audio id="background-sound" loop>
+        <source src="image/StockTune-Dawn's_Gentle_Embrace_1725622309.mpeg">
+    </audio>
+</div>
+<div id="clock">
+    <div class="clock-container">
+        <div class="clock-face">
+            <div id="time" class="time">00:00:00</div>
+            <div id="date" class="date">January 1, 2024</div>
+        </div>
+    </div>
+</div> 
+<div class="bubbles">
+    <img src="image/1717002367607.png" alt="">
+    <img src="image/1717002367607.png" alt="">
+    <img src="image/1717002367607.png" alt="">
+    <img src="image/1717002367607.png" alt="">
+    <img src="image/1717002367607.png" alt="">
+    <img src="image/1717002367607.png" alt="">
+    <img src="image/1717002367607.png" alt="">
+    <img src="image/1717002367607.png" alt="">
+    <img src="image/1717002367607.png" alt="">
+    <img src="image/1717002367607.png" alt="">
+    <img src="image/1717002367607.png" alt="">
+    <img src="image/1717002367607.png" alt="">
+    <img src="image/1717002367607.png" alt="">
+    
+</div>
+ </div>
+</div>
+
+  
+    <!--      Hero Section Ends     -->
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Get in Touch</h1>
+            <h2>Let's Work Together</h2>
+            <h3>I'm excited to collaborate with you.</h3>
+            <p>I'd love to hear from you, send a message and let's schedule a call and get started...</p>
+        </div>
+    </section>
+
+    <!-- Conatct Form -->
+
+    <section id="my-email" class="contact-form-section">
+        <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+            <div class="container">
+                <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="061f0625-61f8-48d3-9c57-e8ddedad109c">
+                    <input type="hidden" name="subject" value="happibo">
+                    <input type="hidden" name="from_name" value="happibo">
+                    <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                    <input type="text" name="name" placeholder="Name">
+                    <input type="email" name="email" placeholder="Email">
+                    <textarea name="message" placeholder="message"></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <div id="chatbot-container" onclick="toggleChat()">
+        <div id="chat-icon">💬</div>
+        <div id="chat-content">
+            <div id="chat-messages"></div>
+            <div id="user-input">
+                <input type="text" id="user-message" placeholder="Type your message...">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="index.html">Service</a>
+                <a href="contact.html">Feedback</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="box">
+                <h3>Extra Links</h3>
+                <a href="#myAcount">my account</a>
+                <a href="index.html">my projects</a>
+                <a href="about.html">my story</a>
+                <a href="cv.html">My CV</a>
+
+            </div>
+
+            <div class="box">
+                <h3>Location</h3>
+                <a href="#">Abuja</a>
+                <a href="#">Enugu</a>
+                <a href="#">Lagos</a>
+                <a href="#">Kaduna</a>
+                <a href="#">Ogun</a>
+            </div>
+
+            <div class="box" id="contact">
+                <h3>Contact Info</h3>
+                <a href="#">+234-810-354-3491</a>
+                <a href="#">michaelhappiness70@gmail.com</a>
+                <a href="#">Kubwa, Abuja,Nigeria</a>
+            </div>
+
+        </div>
+        <div class="social-links" id="myAcount">
+            <a href="https://web.facebook.com/profile.php?id=100008653816872&_rdc=1&_rdr" target="_blank"><i
+                    class="fab fa-facebook"></i></a>
+            <a href="https://www.x.com/happine47968980" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/happibo_/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/happiness-michael-26b20a244" target="_blank"><i
+                    class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="credit">created by <span>HappiBo</span>
+    
+            <a href="#" class="back-to-top">↑</a>
+
+        </div>
+    </section>
+
+
+    <!-- Conatct Information -->
+
+
+    <section class="contact-info-section">
+        <div class="container">
+            <p>Address: 104 Sango Ota, Lagos Nigeria.</p>
+            <p>Phone:+234-810-354-3491</p>
+            <p>Email:happinessbusiness01@gmail.com</p>
+            <footer>
+                <p>&copy;2024 HappiBo. All Rights Reserved</p>
+            </footer>
+    </section>
+    <script>
+        AOS.init();
+    </script>
+    <script src="index.js"></script>
+</body>
+
+</html>

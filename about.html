@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="image/favicon (1).ico" type="image/x-icon">
+</head>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/fontawesome.min.css">
+</head>
+
+<body>
+
+       
+    <!--      Hero Section Starts     -->
+  <!-- Your website content here -->
+  
+  <div class="hero">
+    <div class="hero-background">
+    <div class="light-container">
+        <div class="default-mode">
+            <div id="theme-switcher">
+                <svg id="theme-icon" class="theme-icon" viewBox="0 0 24 24" onclick="toggleDropdown()">
+                    <path id="icon-path"
+                        d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58c-.39-.39-1.03-.39-1.41 0-.39.39-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37c-.39-.39-1.03-.39-1.41 0-.39.39-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0 .39-.39.39-1.03 0-1.41l-1.06-1.06zm1.06-10.96c.39-.39.39-1.03 0-1.41-.39-.39-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.36c.39-.39.39-1.03 0-1.41-.39-.39-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z" />
+                </svg>
+                <div id="themeDropdown" class="dropdown">
+                    <a href="#" onclick="setTheme('default')">System</a>
+                    <a href="#" onclick="setTheme('light')">Light</a>
+                    <a href="#" onclick="setTheme('dark')">Dark</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="zoom-in">
+        <header>
+        <nav>
+            <div class="logo"><a href="index.html"><img src="image/happi3 (Phone).png"></a></div>
+            <div class="openMenu"><i class="fa fa-bars"></i></div>
+            <ul class="mainMenu">
+                <div class="header-container">
+                        <li> <a href="index.html"><div class="header-item" id="home">Home</div></a></li>
+                        <li> <a href="about.html"><div class="header-item" id="home">About</div></a></li>
+                        <li> <a href="https://eu.docworkspace.com/d/cIGftuNDiAfWsmrYG?from=dco"><div class="header-item" id="home">Resume</div></a></li>
+                        <li> <a href="contact.html"><div class="header-item" id="home">Contact</div></a></li>
+                </div>
+                <div class="closeMenu"><i class="fa fa-times"></i></div>
+            </ul>
+        </nav>
+    </header>
+</div>
+
+<div class="mainhero-content">
+    <h3>Welcome to</h3>
+    <h1 class="typing-effect"></h1>
+    <a href="#events"><button type="button">Take a Tour</button></a>
+</div> 
+    
+<div class="sound-content" id="sound-button">
+    <svg class="sound-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+        <path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9l0-176c0-8.7 4.7-16.7 12.3-20.9z"/></svg>
+
+    <audio id="background-sound">
+        <source src="image/StockTune-Dawn's_Gentle_Embrace_1725622309.mpeg">
+    </audio>
+</div>
+<div id="clock">
+    <div class="clock-container">
+        <div class="clock-face">
+            <div id="time" class="time">00:00:00</div>
+            <div id="date" class="date">January 1, 2024</div>
+        </div>
+    </div>
+</div> 
+<div class="bubbles">
+    <img src="image/1717002367607.png" alt="">
+    <img src="image/1717002367607.png" alt="">
+    <img src="image/1717002367607.png" alt="">
+    <img src="image/1717002367607.png" alt="">
+    <img src="image/1717002367607.png" alt="">
+    <img src="image/1717002367607.png" alt="">
+    <img src="image/1717002367607.png" alt="">
+    <img src="image/1717002367607.png" alt="">
+    <img src="image/1717002367607.png" alt="">
+    <img src="image/1717002367607.png" alt="">
+    <img src="image/1717002367607.png" alt="">
+    <img src="image/1717002367607.png" alt="">
+    <img src="image/1717002367607.png" alt="">
+    
+</div>
+ </div>
+</div>
+  
+    <!--      Hero Section Ends     -->
+
+
+    <!-- About Section Starts -->
+
+
+    <section class="abt-story">
+        <div data-aos="zoom-out">
+            <div class="abt-story-container">
+                <img src="image/happigrad.png" alt="image">
+                <div class="abt-story-text">
+                    <h1>About Me</h1>
+                    <h5>Frontend <span>Developer</span></h5>
+                    <p>My Name is Happiness Michael, My brand Name is <span><a href="index.html">HappiBO</a></span>,
+                        A graduate of the university of nigeria, Nsukka.
+                        Iam a frontend Web developer with almost 3years of experience. I can build websites
+                        from scratch and turn it into something very beautiful.
+                        For evidence of the above claims, click on the links below and view my github repositories.</p>
+                        <a href="https://github.com/Happinesspetra"><button class="abt-btn">Click Me</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="abt-pics">
+        <div class="wavy-header">
+            <div class="header"><h1>I Love Food</div></h1>
+            <svg class="wave" viewBox="0 0 1440 100" preserveAspectRatio="none">
+                <defs>
+                    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="#3b82f6" />
+                        <stop offset="100%" stop-color="#8b5cf6" />
+                    </linearGradient>
+                </defs>
+                <path d="M0,50 C300,100 600,0 900,50 C1200,100 1440,0 1440,50 V100 H0 Z" />
+            </svg>
+        </div>
+
+        <div class="wrapper">
+            <div data-aos="fade-up">
+                <div class="image">
+                    <img src="image/gallery-img-06.jpg">
+                    <div class="abt-content">
+                        <p>Food is the universal language that brings us all together. It has the power to evoke
+                            emotions, spark memories, and satisfy our cravings.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div data-aos="fade-down-left">
+                <div class="image">
+                    <img src="image/gallery-img-02.jpg">
+                    <div class="abt-content">
+                        <p>Whether you're a foodie, a chef, or just someone who loves to eat, there's no denying the
+                            impact that food has on our lives. It's a source of comfort, a symbol of love, and a way to
+                            connect with others.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="wrapper">
+            <div data-aos="flip-down">
+                <div class="image">
+                    <img src="image/gallery-img-03.jpg">
+                    <div class="abt-content">
+                        <p>But food is more than just a source of pleasure - it's also a way to nourish our bodies and
+                            minds. A healthy diet can boost our energy, improve our mood, and even support our mental
+                            health.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div data-aos="fade-down-right">
+                <div class="image">
+                    <img src="image/gallery-img-04.jpg">
+                    <div class="abt-content">
+                        <p>there's no denying the power of food to bring us together and make our lives a little more
+                            delicious.
+                            What's your favorite food? Do you have a go-to comfort food or a favorite restaurant? Let's
+                            talk about it!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About Food Ends -->
+
+
+
+
+        <!-- About Chess Starts -->
+
+        <div class="wavy-header">
+            <div class="header"><h1>I Love Playing Chess</div></h1>
+            <svg class="wave" viewBox="0 0 1440 100" preserveAspectRatio="none">
+                <defs>
+                    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="#3b82f6" />
+                        <stop offset="100%" stop-color="#8b5cf6" />
+                    </linearGradient>
+                </defs>
+                <path d="M0,50 C300,100 600,0 900,50 C1200,100 1440,0 1440,50 V100 H0 Z" />
+            </svg>
+        </div>
+
+        <div class="wrapper">
+            <div data-aos="flip-left">
+                <div class="image">
+                    <img src="image/jachymmichal-oVWilf8znF8-unsplash.png">
+                    <div class="abt-content">
+                        <h1>About Chess</h1>
+                        <p>This two-player board game requires skill, patience, and foresight, making it a timeless
+                            classic.
+                            The objective is simple: checkmate your opponent's king.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div data-aos="fade-down-right">
+                <div class="image">
+                    <img src="image/felix-mittermeier-nAjil1z3eLk-unsplash.png">
+                    <div class="abt-content">
+                        <h1>History of Chess</h1>
+                        <p>Ancient India-6th cent AD<br>
+                            Persia and the Arab World-6th-8th cent AD<br>
+                            Europe-11th-15th cent AD<br>
+                            Modern Era-19th-20th cent AD<br>
+                            Digital Age-21st cent AD
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div data-aos="fade-up-left">
+                <div class="image">
+                    <img src="image/carlos-esteves-G8wvNzm_fK0-unsplash.png">
+                    <div class="abt-content">
+                        <h1>How to play Chess</h1>
+                        <p>The board consists of 64 squares, arranged in an 8x8 grid. Each player starts with 16 pieces:
+                            one king, one queen, two rooks, two knights, two bishops, and eight pawns.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div data-aos="fade-up-right">
+                <div class="image">
+                    <img src="image/sk-CNBRg1K9QvQ-unsplash.png">
+                    <div class="abt-content">
+                        <h1>Names of best Chess players</h1>
+                        <p>Magnus Carlsen: Highest-rated player in the world.<br>
+                            Hikaru Nakamura<br>
+                            Fabiano Caruana: Youngest American chess grandmaster.<br>
+                            Arjun Erigaisi<br>
+                            Ian Nepomniachtchi
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About Chess Ends -->
+
+
+        <!-- About Reading Starts -->
+
+        <div class="wavy-header">
+            <div class="header"><h1>I Love Reading</div></h1>
+            <svg class="wave" viewBox="0 0 1440 100" preserveAspectRatio="none">
+                <defs>
+                    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="#3b82f6" />
+                        <stop offset="100%" stop-color="#8b5cf6" />
+                    </linearGradient>
+                </defs>
+                <path d="M0,50 C300,100 600,0 900,50 C1200,100 1440,0 1440,50 V100 H0 Z" />
+            </svg>
+        </div>
+
+        <div class="wrapper">
+            <div data-aos="zoom-out-down">
+                <div class="image">
+                    <img src="image/blaz-photo-zMRLZh40kms-unsplash.png">
+                    <div class="abt-content">
+                        <h1>Facts about reading</h1>
+                        <p>Reading reduces stress<br>
+                            expands vocabulary<br>
+                            supports personal growth<br>
+                            improves focus and concentration<br>
+                            increases cultural awareness<br>
+                            Reading is fun!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div data-aos="zoom-out-up">
+                <div class="image">
+                    <img src="image/istockphoto-1396282453-612x612.png">
+                    <div class="abt-content">
+                        <h1>Books I'd advice you to read</h1>
+                        <p>Mindset: The New Psychology of Success-Carol S. Dweck<br>
+                            The Power of Now-Eckhart Tolle
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div data-aos="zoom-out">
+                <div class="image">
+                    <img src="image/istockphoto-508586144-612x612.png">
+                    <div class="abt-content">
+                        <h1>Importance of Reading</h1>
+                        <p>Knowledge Acquisition<br>
+                            Improved Vocabulary<br>
+                            Critical Thinking<br>
+                            Personal Growth<br>
+                            Better Communication<br>
+                            Academic Success<br>
+                            Cultural Awareness<br>
+                            Increased Creativity<br>
+                            Fun and Enjoyment
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div data-aos="zoom-in-right">
+                <div class="image">
+                    <img src="image/istockphoto-808834634-612x612.png">
+                    <div class="abt-content">
+                        <h1>Books i had read</h1>
+                        <p>The Psychology of Money-Morgan Housel<br>
+                            How Successful People Think-John Maxwell<br>
+                            How to Win Friends and Influence People-Dale Carnegie
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About Reading Ends -->
+
+
+
+
+        <!-- About Music Starts -->
+        <div class="wavy-header">
+            <div class="header"><h1>I Love Music</div></h1>
+            <svg class="wave" viewBox="0 0 1440 100" preserveAspectRatio="none">
+                <defs>
+                    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="#3b82f6" />
+                        <stop offset="100%" stop-color="#8b5cf6" />
+                    </linearGradient>
+                </defs>
+                <path d="M0,50 C300,100 600,0 900,50 C1200,100 1440,0 1440,50 V100 H0 Z" />
+            </svg>
+        </div>
+
+        <div class="wrapper">
+            <div data-aos="zoom-in-left">
+                <div class="image">
+                    <img src="image/josh-rocklage-HAAsKeZbHAc-unsplash.png">
+                    <div class="abt-content">
+                        <h1>About Music</h1>
+                        <p>Music can stimulate the brain's reward system, releasing dopamine and endorphins, which can
+                            improve mood, reduce stress, and boost creativity.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div data-aos="zoom-in-down">
+                <div class="image">
+                    <img src="image/jukka-aalho-OaPksPcVp50-unsplash.png">
+                    <div class="abt-content">
+                        <h1>History of Music</h1>
+                        <p> Ancient Civilizations 3000 BCE-500 CE <br>
+                            Medieval 500-1450 CE<br>
+                            Renaissance 1450-1600 CE<br>
+                            Baroque 1600-1750 CE<br>
+                            Classical 1750-1820 CE<br>
+                            Romantic 1820-1910 CE<br>
+                            20th-Century 1910-2000 CE<br>
+                            Contemporary 2000 CE-present
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div data-aos="zoom-in-up">
+                <div class="image">
+                    <img src="image/asafh-kalebe-pVSIuA3tJ4M-unsplash.png">
+                    <div class="abt-content">
+                        <h1>My best Musical instrument</h1>
+                        <p>The guitar evolved from in Spain, with the modern version emerging in the 16th century. <br>
+                            Types:<br>
+                            Acoustic<br>
+                            Electric<br>
+                            Classical<br>
+                            Bass<br>
+                            Resonator</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div data-aos="zoom-in">
+                <div class="image">
+                    <img src="image/bogomil-mihaylov-ekHSHvgr27k-unsplash.png">
+                    <div class="abt-content">
+                        <h1>Importance of Music</h1>
+                        <p>Entertainment <br>
+                            Mood Enhancement <br>
+                            Social Bonding<br>
+                            Cultural Significance<br>
+                            Therapeutic Benefits<br>
+                            Intellectual Development<br>
+                            Personal Growth<br>
+                            Historical Preservation
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Music Ends -->
+
+
+
+
+    <!-- About footer starts -->
+    
+    <div id="chatbot-container" onclick="toggleChat()">
+        <div id="chat-icon">💬</div>
+        <div id="chat-content">
+            <div id="chat-messages"></div>
+            <div id="user-input">
+                <input type="text" id="user-message" placeholder="Type your message...">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="#">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Service</a>
+                <a href="contact.html">Feedback</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="box">
+                <h3>Extra Links</h3>
+                <a href="#myAcount">my account</a>
+                <a href="#projects">my projects</a>
+                <a href="#">my story</a>
+                <a href="cv.html">My CV</a>
+
+            </div>
+
+            <div class="box">
+                <h3>Location</h3>
+                <a href="#">Abuja</a>
+                <a href="#">Enugu</a>
+                <a href="#">Lagos</a>
+                <a href="#">Kaduna</a>
+                <a href="#">Ogun</a>
+            </div>
+
+            <div class="box" id="contact">
+                <h3>Contact Info</h3>
+                <a href="#">+234-810-354-3491</a>
+                <a href="#">michaelhappiness70@gmail.com</a>
+                <a href="#">Kubwa, Abuja,Nigeria</a>
+            </div>
+
+        </div>
+        <div class="social-links" id="myAcount">
+            <a href="https://web.facebook.com/profile.php?id=100008653816872&_rdc=1&_rdr" target="_blank"><i
+                    class="fab fa-facebook"></i></a>
+            <a href="https://www.x.com/happine47968980" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/happibo_/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/happiness-michael-26b20a244" target="_blank"><i
+                    class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="credit">created by <span>HappiBo</span> &copy;
+
+            <a href="#" class="back-to-top">↑</a>
+
+        </div>
+    </section>
+    <!-- About footer Ends-->
+
+    <script>
+        AOS.init();
+    </script>
+    <script src="index.js"></script>
+</body>
+
+</html>
