@@ -818,7 +818,7 @@ label input[type="checkbox"]:checked~.hidden-content {
 /* My Like Section Starts */
 
 .my-slides {
-    background: linear-gradient(to right, #895789, #222);
+    background: linear-gradient(#131053, #8e90bd);
     height: 100vh;
     width: 100%;
     display: flex;
@@ -887,6 +887,10 @@ label input[type="checkbox"]:checked~.hidden-content {
     margin-right: 50px;
 }
 
+.abilities-content h1{
+    font-size: 24px;
+}
+
 .abilities-content {
     margin-top: 50px;
     color: #8e90bd;
@@ -905,6 +909,10 @@ video{
     object-fit: cover;
     border: 5px solid#8e90bd;
     border-radius: 20px;
+}
+
+.vid-text h1{
+    font-size: 24px;
 }
 
 .vid-text {
@@ -935,22 +943,20 @@ video{
     
 video{
     width: 90vw;
-    height: 100vh;
+    height: 75vh;
     border-radius: 20px;
     position: relative;
-    bottom: 200px;
+    bottom: 100px;
 }
 
     .vid-text h1 {
-        white-space: nowrap;
-        position: relative;
-        bottom: 700px;
+        position: absolute;
+        bottom: 800px;
     }
 
     .vid-text {
-        font-size: 4vmin;
         position: relative;
-        top: 670px;
+        top: 700px;
         padding-right: 10px;
     }
 
@@ -1044,6 +1050,9 @@ video{
     object-fit: cover;
     border-radius: 20px;
     margin: 5px;
+    width: 100%;
+    display: flex;
+    margin: auto;
 }
 
 .wrapper .image {
@@ -1058,12 +1067,6 @@ video{
 
 .wrapper .image:hover {
     transform: translateY(-20px);
-}
-
-.wrapper img {
-    width: 100%;
-    display: flex;
-    margin: auto;
 }
 
 .con-tent {
@@ -1095,17 +1098,18 @@ video{
     .logo-title {
             margin-left: -200px;
             position: relative;
-            bottom: 150px;
+            bottom: 70px;
     }
     .slideshow-container {
         width: 90%;
         height: 50%;
         position: absolute;
-        margin-bottom: 150px;
+        margin-bottom: 0px;
     }
     .wrapper img {
         position: relative;
-        top: -25px;
+        top: auto;
+        width: 100%;
     }
 
     .con-tent {
@@ -1117,11 +1121,10 @@ video{
         left: 0;
         margin: 20px;
     }
-
-    .wrapper img {
-        top: auto;
-        width: 100%;
-    }
+    .wrapper {
+        position: relative;
+        top: -70px;
+   }    
 }
 
 
@@ -1131,13 +1134,6 @@ video{
 
 
 /*  Project Section  Starts*/
-
-.project-title{
-    text-align: center;
-    color: #8e90bd;
-    position: relative;
-    top: -20px;
-}
 
 .card-container {
     display: flex;
@@ -1544,7 +1540,7 @@ video{
     background-color: #90d3dc;
 }
 
-.header-item, h1{
+.header-item, .social-links{
     animation: waveText 2s ease-in-out infinite;
 }
 
@@ -1721,6 +1717,7 @@ video{
 
 .contact-info-section .container {
     margin: 20px;
+    font-size: 13px;
 }
 
 @media (max-width:768px) {
@@ -1757,11 +1754,12 @@ a {
 }
 
 .footer {
+    font-size: 12px;
     margin: 0;
     padding: 20px;
     width: auto;
     box-sizing: border-box;
-    background: linear-gradient(to top, #120941, #09091d);
+    background: linear-gradient(to top, #131053, #7275bb);
 }
 
 .footer .box-container {
@@ -1774,19 +1772,19 @@ a {
 
 .footer .box-container .box h3 {
     color: #fcf7f7;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     padding: 1rem 0;
 }
 
 .footer .box-container .box a {
     display: block;
     color: #faf3f3;
-    font-size: 1.5rem;
-    padding: 1rem 0;
+    font-size: 1rem;
+    padding: 1.2rem 0;
 }
 
 .footer .box-container .box a:hover {
-    color: #6a6a6f;
+    color: #838392;
     text-decoration: underline;
 }
 
@@ -1799,7 +1797,7 @@ a {
     top: 100%;
     display: flex;
     position: relative;
-    left: 70%;
+    left: 73.6%;
     bottom: 100px;
 }
 
@@ -1812,7 +1810,7 @@ a {
     padding: 1.5rem;
     margin-top: 1.5rem;
     padding-top: 2.5rem;
-    font-size: 2rem;
+    font-size: 1.2rem;
     color: #575151;
     border-top: .1rem solid rgba(0, 0, 0, .5);
 }
