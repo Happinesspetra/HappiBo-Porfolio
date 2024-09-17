@@ -95,7 +95,7 @@ html {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background-color: #8e90bd;
+    background-color: #7275bb;
     color: white;
     display: flex;
     justify-content: center;
@@ -332,7 +332,7 @@ html {
     z-index: 99;
     border: none;
     outline: none;
-    background-color: #241d47;
+    background-color: #7275bb;
     color: white;
     cursor: pointer;
     padding: 15px;
@@ -355,6 +355,7 @@ html {
         }
 
         .hero-background {
+            background-image: linear-gradient(to bottom, #90d3dc, #000e2e);
             position: relative;
             top: 0;
             left: 0;
@@ -363,19 +364,6 @@ html {
             background-size: cover;
             object-fit: cover;
             background-position: center;
-            opacity: 0;
-            animation: backgroundSlideshow 10s infinite;
-        }
-        @keyframes backgroundSlideshow {
-            0% {
-                background-image: url('image/1717000188864.jpg');
-                opacity: 1;
-            }
-            100% {
-                background-image: linear-gradient(to bottom, #90d3dc, #000e2e);
-                opacity: 1;
-            }
-          
         }
 
 .header-container {
@@ -400,7 +388,7 @@ html {
 }
 
 .header {
-    text-shadow: 3px -3px 1px rgb(154, 236, 244);
+    text-shadow: 3px -3px 1px #8e90bd;
 }
 
 nav {
@@ -818,8 +806,7 @@ label input[type="checkbox"]:checked~.hidden-content {
 /* My Like Section Starts */
 
 .my-slides {
-    background: linear-gradient(#131053, #8e90bd);
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -1200,7 +1187,7 @@ video{
 
 .card-button {
     display: inline-block;
-    background-color: #131053;
+    background-color: #8e90bd;
     border-radius: 5px;
     margin-right: 10px;
     padding: 8px 16px;
